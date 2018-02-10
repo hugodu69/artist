@@ -1,0 +1,121 @@
+body {margin: 0; padding: 0;}
+
+/*on formate le header avec ses boutons cliquables*/
+#header {
+	display: flex;
+	height: 50px;
+	background-color: rgba(140, 140, 140, 0.7);
+}
+
+#header a, img {
+	margin: auto;
+	text-decoration: none;
+}
+
+/*on fait apparaitre les images et le texte quand on clique sur les boutons*/
+.onglets {
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+}
+
+.onglets:target {
+	display: block;
+}
+
+.onglets img {
+	width: 100%;
+}
+
+/*cette boite sert a centrer le texte*/
+.onglets .text {
+	position: absolute;
+	top: 150px;
+	width: 100%;
+}
+
+.onglets p {
+	position: relative;
+	text-align: center;
+}
+
+/*le slide*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+/*pour que le slide soit calé sous le header en haut*/
+#slide {
+	position: absolute;
+	top: 0px;
+	z-index: -2;
+}
+
+/*caler le texte au dessus du slide*/
+#slide p {
+	position: absolute;
+	top: 200px;
+	width: 100%;
+	background-color: rgba(153, 153, 153, 0.5);
+	text-align: center;
+	z-index: 3;
+}
+
+#cadre img { width: 20%; float: left; }
+#cadre { 
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slidy infinite; 
+}
+
+/*
+@keyframes box {
+	from {top: -100px; opacity: 0;}
+	to {top: 0px; opacity: 1;}
+}*/
+/*
+.tour:target {
+	display: flex;
+	position: absolute;
+}*/
+
+#tour .text {
+	position: absolute;
+}
+
+#windows {
+/*	display: none;
+*/
+	position: absolute;
+	left: 0px;
+	background-color: rgba(100, 100, 100, 0.4);
+	padding: 10;
+	border: 1px solid #777;
+	border-radius: 10px;
+	text-align: justify;
+	width: 200px;
+	height: 200px;
+	z-index: 10;
+/*	animation-name: box;
+	animation-duration: 0.5s;
+*/}
+
+#vignette {
+	width: 190px;
+	justify-content: center;
+}
+
