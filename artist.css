@@ -93,29 +93,50 @@ body {margin: 0; padding: 0;}
 	position: absolute;
 }*/
 
-#tour .text {
+#tour .vignette {
 	position: absolute;
 }
 
-#windows {
+#tour .vignette p {
+	text-align: left;
+}
+
+.windows {
 /*	display: none;
-*/
-	position: absolute;
+*/	position: relative;
 	left: 0px;
 	background-color: rgba(100, 100, 100, 0.4);
 	padding: 10;
 	border: 1px solid #777;
 	border-radius: 10px;
-	text-align: justify;
 	width: 200px;
-	height: 200px;
 	z-index: 10;
 /*	animation-name: box;
 	animation-duration: 0.5s;
 */}
 
-#vignette {
-	width: 190px;
-	justify-content: center;
+.windows img {
+	display: flex;
+	width: 100%;
+	margin: auto;
 }
 
+#un {
+	left: 30%;
+	top: 10%;
+} 
+
+#deux {
+	left: 60%;
+	top: 30%;
+} 
+
+#trois {
+	left: 80%;
+	top: 60%;
+} 
+
+#quatre {
+	left: 50%;
+	top: 20%;
+} 
